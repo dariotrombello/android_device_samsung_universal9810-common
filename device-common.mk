@@ -14,5 +14,9 @@
 
 LOCAL_PATH := device/samsung/universal9810-common
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default
+
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/universal9810-common/universal9810-common-vendor.mk)
