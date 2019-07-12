@@ -13,3 +13,6 @@
 # limitations under the License.
 
 LOCAL_PATH := device/samsung/universal9810-common
+
+# call the proprietary setup
+$(call inherit-product, vendor/samsung/universal9810-common/universal9810-common-vendor.mk)
