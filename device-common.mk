@@ -18,5 +18,10 @@ LOCAL_PATH := device/samsung/universal9810-common
 PRODUCT_PACKAGES += \
     audio.a2dp.default
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml \
+    frameworks/native/data/etc/android.hardware.sensor.heartrate.xml:system/etc/permissions/android.hardware.sensor.heartrate.xml
+
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/universal9810-common/universal9810-common-vendor.mk)
