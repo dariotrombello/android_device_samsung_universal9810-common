@@ -30,6 +30,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio_keys.kl:system/usr/keylayout/gpio_keys.kl
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.1-service \
+    com.android.nfc_extras \
+    libnfc-nci \
+    libnfc_nci_jni \
+    NfcNci \
+    Tag
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml \
