@@ -27,5 +27,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml \
     frameworks/native/data/etc/android.hardware.sensor.heartrate.xml:system/etc/permissions/android.hardware.sensor.heartrate.xml
 
+# Properties
+-include $(LOCAL_PATH)/system_prop.mk
+
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/universal9810-common/universal9810-common-vendor.mk)
