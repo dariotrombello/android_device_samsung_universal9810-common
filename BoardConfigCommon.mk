@@ -52,6 +52,10 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/samsung/universal9810
 
+# Lineage hardware
+BOARD_HARDWARE_CLASS := \
+    hardware/samsung/lineagehw
+
 # Platform
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos5
